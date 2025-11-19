@@ -1,167 +1,194 @@
 <!DOCTYPE html>
-<html lang="pt_br">
-
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Demonstrativa</title>
-    <link rel="stylesheet" href="./Css/styles.css" type="text/css">
-    <script src="./Js/script.js"></script>
+    <title>Loja do Kiuzin - Tênis Premium</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
-    <!-- Nav -->
-
-    <nav class="nav">
-        <h1><a href="#hero">Loja do Kiuzin</a></h1>
-        <div class="nav-items">
-            <a href="#produtos">Produtos</a>
-            <a href="#sobre-nos">Sobre nós</a>
-            <a href="#localizacao">Localização</a>
+    <!-- Navegação -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <div class="logo" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">Kiuzin</div>
+            <div class="nav-links">
+                <a href="#produtos">Produtos</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#depoimentos">Depoimentos</a>
+                <a href="#localizacao">Localização</a>
+            </div>
         </div>
     </nav>
 
     <!-- Hero -->
-    <div class="background" id="hero">
-        <div class="conteudo-principal">
-            <h1 class="titulo">Loja do Kiuzin</h1>
-            <h1>Conheça nossos produtos.</h1>
-            <button class="botao" onclick="navegarParaId('produtos')">Ver produtos</button>
+    <section class="hero" id="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <h1>Estilo que Move Você</h1>
+            <p>Descubra a coleção exclusiva de tênis premium que combina conforto, tecnologia e design arrojado</p>
+            <a href="#produtos" class="cta-button">Explorar Coleção</a>
         </div>
-    </div>
+    </section>
 
     <!-- Produtos -->
-    <div id="produtos">
-        <div class="conteudo-principal">
-            <h1 class="titulo">Produtos em Alta</h1>
-            <div class="carrosel">
-
-                <!-- Tênis preto corrida -->
-
-                <div class="tenis">
-                    <img class="imagem-carrosel" src="./Imgs/tenis1.jpg" alt="Tênis1">
-                    <p class="paragrafo-venda">Tênis preto corrida</p>
-                    <p class="paragrafo-venda preco">R$ 350</p>
+    <section class="produtos fade-in" id="produtos">
+        <h2 class="section-title">Produtos em Destaque</h2>
+        <p class="section-subtitle">Seleção especial de tênis premium para todos os estilos</p>
+        
+        <div class="produtos-grid">
+            <div class="produto-card">
+                <img class="produto-img" src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500" alt="Tênis Premium">
+                <div class="produto-info">
+                    <h3 class="produto-nome">Runner Elite Pro</h3>
+                    <p class="produto-preco">R$ 350</p>
+                    <span class="produto-tag">Novo</span>
                 </div>
+            </div>
 
-                <!-- Tênis branco casual -->
-
-                <div class="tenis">
-                    <img class="imagem-carrosel" id="tenis-branco" src="./Imgs/tenis2.jpg" alt="Tênis2">
-                    <p class="paragrafo-venda">Tênis branco casual</p>
-                    <p class="paragrafo-venda preco">R$ 299</p>
+            <div class="produto-card">
+                <img class="produto-img" src="https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?w=500" alt="Tênis Casual">
+                <div class="produto-info">
+                    <h3 class="produto-nome">Urban Style White</h3>
+                    <p class="produto-preco">R$ 299</p>
+                    <span class="produto-tag">Bestseller</span>
                 </div>
+            </div>
 
-                <!-- Tênis elegante verde -->
-
-                <div class="tenis">
-                    <img class="imagem-carrosel" src="./Imgs/tenis3.jpg" alt="Tênis3">
-                    <p class="paragrafo-venda">Tênis elegante verde</p>
-                    <p class="paragrafo-venda preco">R$ 199</p>
+            <div class="produto-card">
+                <img class="produto-img" src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=500" alt="Tênis Esportivo">
+                <div class="produto-info">
+                    <h3 class="produto-nome">Sport Green Edition</h3>
+                    <p class="produto-preco">R$ 199</p>
+                    <span class="produto-tag">Promoção</span>
                 </div>
-
             </div>
         </div>
-    </div>
+    </section>
 
-    <!-- Sobre nós -->
-
-    <div id="sobre-nos">
-        <div class="conteudo-principal">
-            <h1 class="titulo">Sobre nós</h1>
-            <div class="sobre-nos">
-                <div class="flex-col paragrafos-about">
-
-                    <p class="paragrafo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque assumenda
-                        excepturi
-                        necessitatibus reprehenderit, incidunt recusandae ea! In quisquam iure, ad, architecto laborum,
-                        natus
-                        dolorum expedita libero maxime voluptatibus magni molestias.
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi commodi quisquam quo esse
-                        eius, veritatis molestiae maiores fuga magnam impedit voluptas eaque iusto, unde officia totam
-                        obcaecati saepe minus ad?
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto fugiat sapiente eius saepe,
-                        vel perspiciatis. Quidem sapiente voluptas minus, omnis perspiciatis repudiandae id beatae,
-                        maxime consequuntur ducimus illo nesciunt magnam.</p>
-
-                    <p class="paragrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta similique
-                        beatae ad
-                        in.
-                        Totam veniam non aut rerum quos dolorum repudiandae, eveniet eaque quis error delectus,
-                        necessitatibus
-                        porro fugiat at.
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur atque tempore impedit
-                        tempora, dolores harum nisi eveniet soluta dolore totam doloribus ratione quos corporis
-                        veritatis voluptas ducimus sequi vitae ad.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni vel iusto odit dolor rem ullam
-                        quasi saepe necessitatibus, et a dolorum dolores adipisci in consequuntur nostrum, nihil cum
-                        architecto nemo.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, ullam in dicta cupiditate
-                        voluptatum ipsa nostrum quisquam cumque! Voluptates ratione, at pariatur commodi eveniet
-                        repellat quo maxime. Ad, tempora ducimus?</p>
-
-                    <p class="paragrafo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem tenetur
-                        doloremque
-                        doloribus fugiat enim! Similique incidunt, reiciendis tenetur porro laborum quos eveniet ullam
-                        error
-                        deleniti inventore harum voluptate quam dignissimos.</p>
-
-                </div>
-
-                <img class="tenis-main" src="./Imgs/Tenis_main.jpg" alt="Homem">
-
-            </div>
-        </div>
-    </div>
-
-    <!-- Localização -->
-
-    <div id="localizacao">
-        <div class="conteudo-principal">
-            <h1 class="titulo">Localização</h1>
-            <div class="localizacao">
-
-
-                <div class="map-wrapper">
-                    <div class="map-container">
-                        <iframe src="https://maps.google.com/maps?q=-10.9472,-37.0734&z=15&output=embed" width="100%"
-                            height="100%" frameborder="0" class="map-iframe" allowfullscreen="" aria-hidden="false"
-                            tabindex="0"></iframe>
-
-
+    <!-- Sobre Nós -->
+    <section class="sobre fade-in" id="sobre">
+        <div class="sobre-container">
+            <div class="sobre-content">
+                <h2>Paixão por Qualidade e Estilo</h2>
+                <p>Na Loja do Kiuzin, acreditamos que cada passo importa. Por isso, selecionamos cuidadosamente os melhores tênis do mercado, combinando tecnologia de ponta com design contemporâneo.</p>
+                <p>Nossa missão é proporcionar conforto excepcional sem comprometer o estilo, oferecendo produtos que se adaptam ao seu ritmo de vida.</p>
+                
+                <div class="sobre-stats">
+                    <div class="stat">
+                        <div class="stat-number">10k+</div>
+                        <div class="stat-label">Clientes Satisfeitos</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">Produtos</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">5★</div>
+                        <div class="stat-label">Avaliação</div>
                     </div>
                 </div>
             </div>
+            <img class="sobre-image" src="https://images.unsplash.com/photo-1460353581641-37baddab0fa2?w=800" alt="Sobre a Loja">
         </div>
-    </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section class="depoimentos fade-in" id="depoimentos">
+        <h2 class="section-title">O Que Dizem Nossos Clientes</h2>
+        <p class="section-subtitle">Avaliações reais de quem já escolheu a qualidade Kiuzin</p>
+        
+        <div class="depoimentos-grid">
+            <div class="depoimento-card">
+                <div class="depoimento-stars">★★★★★</div>
+                <p class="depoimento-text">"Melhor compra que fiz! O tênis é super confortável e o design é incrível. Recomendo muito!"</p>
+                <p class="depoimento-autor">- Marina Santos</p>
+            </div>
+            
+            <div class="depoimento-card">
+                <div class="depoimento-stars">★★★★★</div>
+                <p class="depoimento-text">"Qualidade excepcional e entrega super rápida. A Loja do Kiuzin é referência em tênis premium!"</p>
+                <p class="depoimento-autor">- Carlos Eduardo</p>
+            </div>
+            
+            <div class="depoimento-card">
+                <div class="depoimento-stars">★★★★★</div>
+                <p class="depoimento-text">"Atendimento impecável e produtos de primeira linha. Já sou cliente fiel!"</p>
+                <p class="depoimento-autor">- Juliana Oliveira</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Localização -->
+    <section class="localizacao fade-in" id="localizacao">
+        <div class="localizacao-container">
+            <h2 class="section-title">Visite Nossa Loja</h2>
+            <p class="section-subtitle">Venha conhecer nossa coleção pessoalmente</p>
+            
+            <div class="map-wrapper">
+                <iframe src="https://maps.google.com/maps?q=-10.9472,-37.0734&z=15&output=embed" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
-
-    <footer class="footer" id="footer">
-
-        <div>
-            <p class="paragrafo-footer">Loja do Kiuzin</p>
-            <p class="paragrafo">Todos direitos reservados.</p>
-            <p>Site por David Soares @2025</p>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>Loja do Kiuzin</h3>
+                <p>Proporcionando estilo e conforto desde 2020. Sua jornada começa com o passo certo.</p>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Links Rápidos</h4>
+                <ul>
+                    <li><a href="#produtos">Produtos</a></li>
+                    <li><a href="#sobre">Sobre Nós</a></li>
+                    <li><a href="#depoimentos">Depoimentos</a></li>
+                    <li><a href="#localizacao">Localização</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Contato</h4>
+                <ul>
+                    <li><a href="tel:+5579999999999">(79) 99999-9999</a></li>
+                    <li><a href="mailto:contato@lojadokiuzin.com">contato@lojadokiuzin.com</a></li>
+                </ul>
+            </div>
         </div>
-
-        <div>
-            <ul class="lista">
-                <li>
-                    <a href="#produtos">Produtos</a>
-                </li>
-                <li>
-                    <a href="#sobre-nos">Sobre nós</a>
-                </li>
-                <li>
-                    <a href="#localizacao">Localização</a>
-                </li>
-            </ul>
+        
+        <div class="footer-bottom">
+            <p>© 2025 Loja do Kiuzin. Todos os direitos reservados. | Site por David Soares</p>
         </div>
-
     </footer>
 
-</body>
+    <script>
+        // Efeito de scroll na navegação
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
 
+        // Animação de fade-in ao scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+    </script>
+</body>
 </html>
