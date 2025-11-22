@@ -20,6 +20,6 @@ Projeto Landing Page de loja de roupas
 
 
 
-<div><strong>Site: </strong><a href="https://kiuzo.github.io/Loja_do_Kiuzin/">Loja do Kiuzin</a>
+<div><strong>Site: </strong><a href="https://kiuzo.github.io/landing-page-loja/">Loja do Kiuzin</a>
 <div><strong>Project by: </strong><a href="https://github.com/kiuzo">Kiuzo</a>
 
